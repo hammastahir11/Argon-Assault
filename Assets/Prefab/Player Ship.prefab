@@ -113,6 +113,16 @@ MonoBehaviour:
   controlPitchFactor: -10
   positionYawFactor: 2
   controlRollFactor: -20
+  fire:
+    m_Name: Fire
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: be39821d-eec1-4f8a-97c2-ec758e12d4af
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  lasers: []
 --- !u!1001 &1076701782439158176
 PrefabInstance:
   m_ObjectHideFlags: 0
