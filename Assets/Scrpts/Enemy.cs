@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
         scoreBoard= FindObjectOfType<ScoreBoard>();
     }
         void OnParticleCollision(GameObject other) {
-            scoreBoard.IncreaseScore(scorePerHit);
+            //scoreBoard.IncreaseScore(scorePerHit);
             GameObject vfx = Instantiate(enemyVFX, transform.position,Quaternion.identity);
             vfx.transform.parent=parent;
             Destroy(gameObject);    
