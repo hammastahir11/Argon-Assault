@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 2229383112c060d47b812089b4147e1f, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: cf800250cc151714d828cf2cafa805d2, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.21298555, g: 0.19040868, b: 0.16718224, a: 1}
+  m_IndirectSpecularColor: {r: 0.33213922, g: 0.3675973, b: 0.42585415, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -301,11 +301,6 @@ MonoBehaviour:
   enemyVFX: {fileID: 1121192042590650, guid: bd06e152bf37de34c841a420a4bbef1c, type: 3}
   parent: {fileID: 872384794}
   scorePerHit: 10
---- !u!198 &340440848 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 8215096555572330593, guid: c38cbb5d83eadb84aa1236e1c0a841e1, type: 3}
-  m_PrefabInstance: {fileID: 8860330540367225531}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +562,55 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 8860330541525350746, guid: c38cbb5d83eadb84aa1236e1c0a841e1, type: 3}
   m_PrefabInstance: {fileID: 8860330540367225531}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1333294873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1333294875}
+  - component: {fileID: 1333294874}
+  m_Layer: 6
+  m_Name: Post Processing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1333294874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333294873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 6029b2de36a78754f97c41fe748a72f2, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!4 &1333294875
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333294873}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 317.00635, y: -170.70538, z: 693.0248}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &8860330540367225531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -574,34 +618,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2115193848, guid: c38cbb5d83eadb84aa1236e1c0a841e1, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2115193851, guid: c38cbb5d83eadb84aa1236e1c0a841e1, type: 3}
-      propertyPath: crashVFX
-      value: 
-      objectReference: {fileID: 340440848}
-    - target: {fileID: 2115193851, guid: c38cbb5d83eadb84aa1236e1c0a841e1, type: 3}
-      propertyPath: loadDelay
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8128087522541856415, guid: c38cbb5d83eadb84aa1236e1c0a841e1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325030531791563296, guid: c38cbb5d83eadb84aa1236e1c0a841e1, type: 3}
-      propertyPath: controlRollFactor
-      value: -35
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325030531791563296, guid: c38cbb5d83eadb84aa1236e1c0a841e1, type: 3}
-      propertyPath: positionYawFactor
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8325030531791563296, guid: c38cbb5d83eadb84aa1236e1c0a841e1, type: 3}
-      propertyPath: controlPitchFactor
-      value: -10
-      objectReference: {fileID: 0}
     - target: {fileID: 8860330541525350745, guid: c38cbb5d83eadb84aa1236e1c0a841e1, type: 3}
       propertyPath: m_RootOrder
       value: 2
